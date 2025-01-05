@@ -1,4 +1,4 @@
-//cheated a bit; not OMO
+//cheated a bit on the logic part; but coded OMO
 #include <bits/stdc++.h>
 using namespace std;
 
