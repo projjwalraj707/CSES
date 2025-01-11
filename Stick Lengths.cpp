@@ -20,11 +20,19 @@ ll solve(vector<int>& p) {
 	}
 	return -1;
 }
+
+ll solve2(vector<int>& p) {
+	sort(p.begin(), p.end());
+	int median = p[p.size()/2];
+	ll ans = 0;
+	for (int& x: p) ans += abs(x-median);
+	return ans;
+}
  
 int main() {
 	int n; cin>>n;
 	vector<int> p(n);
 	for (int& x: p) cin>>x;
-	cout << solve(p);
+	cout << solve2(p);
 	return 0;
 }
